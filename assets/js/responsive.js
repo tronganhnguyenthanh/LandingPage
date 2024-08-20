@@ -1,4 +1,4 @@
-(function(){
+(function () {
     const $ = document.querySelector.bind(document);
     const $$ = document.querySelectorAll.bind(document);
     document.addEventListener("DOMContentLoaded", () => {
@@ -92,7 +92,7 @@
     // Button Scroll down
     function scrollDown() {
         const scrollDownBtn = $(".scroll-down");
-        if(!scrollDownBtn || scrollDownBtn === null){
+        if (!scrollDownBtn || scrollDownBtn === null) {
             return;
         }
         const sections = $$("section");
@@ -106,7 +106,7 @@
                 if (
                     window.pageYOffset >= section.offsetTop - 10 &&
                     window.pageYOffset <
-                        section.offsetHeight + section.offsetTop
+                    section.offsetHeight + section.offsetTop
                 ) {
                     scrollDownBtn.onclick = () => {
                         if (index + 1 < sections.length) {
@@ -126,3 +126,32 @@
         });
     }
 })();
+$(document).ready(function () {
+    // Function to check and display the screen width
+    function checkScreenWidth() {
+        var screenWidth = $(window).width();
+
+        // Check if the screen width is less than 768px
+        if (screenWidth < 768) {
+            
+            console.log("Screen width is less than 768px (mobile view).");
+        } else {
+            if ($('header').hasClass('open-menu')) {
+                // If it does, remove the class 'active'
+                $('header').removeClass('open-menu');
+                console.log("Class 'active' removed from header.");
+            } else {
+                console.log("Header does not have the class 'active'.");
+            }
+            console.log("Screen width is 768px or more (desktop/tablet view).");
+        }
+    }
+
+    // Run the function on page load
+    checkScreenWidth();
+
+    // Attach the resize event handler to check width on resize
+    $(window).resize(function () {
+        checkScreenWidth();
+    });
+});
