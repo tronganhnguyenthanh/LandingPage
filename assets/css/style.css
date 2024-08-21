@@ -3,6 +3,11 @@ html {
   overflow-y: scroll;
 }
 
+.hero__content{
+  padding:119px 0;
+}
+
+
 .proactive {
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
@@ -11,9 +16,17 @@ html {
 }
 
 .btn-get-extension{
-  background:linear-gradient(90deg, #128071 100%, #13D4A3 100%);
-  margin:12px;
+  background: linear-gradient(90deg, #128071 0%, #13D4A3 100%);
+
   border-radius:8px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 24px;
+  line-height: 24px;
 }
 
 .hero-multiLayer-title {
@@ -29,6 +42,7 @@ html {
   background-image:url("../images/BG_1.png");
   background-size:cover;
   background-repeat:no-repeat;
+  padding: 80px 0px 160px 0px;
 }
 
 #guardian-section-2{
@@ -79,10 +93,33 @@ html {
 }
 
 .item {
-  width: 44%;
-  height: auto;
-  border: 1px solid #fff;
-  padding: 12px
+  width:44%;
+  height:auto;
+  border:1px solid #fff;
+  padding:12px
+}
+
+.guardian__item > .item:nth-of-type(1){
+  border-radius:16px;
+  border-top-left-radius:16px;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+  border-top-right-radius:0;
+}
+
+.guardian__item > .item:nth-of-type(2){
+  border-top-right-radius:16px;
+}
+
+#ethereum{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 16px;
+}
+
+#solana{
+  border-top-right-radius:0;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:16px;
 }
 
 #guardian__item__partner {
@@ -148,11 +185,9 @@ html {
   flex-direction:column;
   align-items:center;
   padding:80px;
-  max-width:1200px;
-  height:792px;
-  background:url("../images/bg.png");
+  background-image:url("https://s3-alpha-sig.figma.com/img/14d8/249e/1bfa4d201795e60edec23d447b72350c?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pJyGV66jah8kbWP4AbuokqeuCwsNsoS8ZrQ-7KUNE-CoNrtocXUFtHUgzLLwPmaPHqLZgsvdPLtZPcGzjtc-fTIL84k30qcz-6jReAU1kTrtmXL15fEw6i6I4-l68BjFWiy8zqfZ58mtLQhNBe1O7~ljvmGeKT9qObu~pg0y85EhQ0Hqv3Ed6SnhsupC02qxqVF9X6WOgqPZJIFF~LaiFSGB15SrMzHtoZsr5OvM3pq7UWt7hFIci8PzDD~fBwVgS9v0KYkO20o1fpv~cC1Gt7wXkdZT7VFnZgB0dpAOOi0Vodo2evQaylHGk-E03A3VC4YW2KMVdHNrf5uUJl1C6w__");
   background-repeat:no-repeat;
-  border-radius:24px;
+  background-size:cover;
   margin:0 auto;
 }
 
@@ -203,7 +238,7 @@ html {
   display:inline-flex;
   border-radius:15px;
   overflow:hidden;
-  width:80%;
+  width:auto;
   margin-left:90px;
   height:auto;
 }
@@ -230,12 +265,6 @@ html {
   position:relative;
   padding:48px;
 }
-
-/* .image-detection-1{
-  background-image:url("../images/rope.png");
-  background-repeat:no-repeat;
-  background-size:cover;
-} */
 
 .wallet-tracking > h2 {
   font-family:"Inter Tight", sans-serif;
@@ -468,7 +497,7 @@ html {
 }
 
 .btn-footer-get-extension{
-  margin-top:-24px;
+  margin-top:-10px;
 }
 
 .btn-wallet-tracking{
@@ -485,10 +514,26 @@ html {
 }
 
 #guardian-section-3{
-  background-image:url("../images/BG_1.png");
+  background-image:url("https://s3-alpha-sig.figma.com/img/14d8/249e/1bfa4d201795e60edec23d447b72350c?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pJyGV66jah8kbWP4AbuokqeuCwsNsoS8ZrQ-7KUNE-CoNrtocXUFtHUgzLLwPmaPHqLZgsvdPLtZPcGzjtc-fTIL84k30qcz-6jReAU1kTrtmXL15fEw6i6I4-l68BjFWiy8zqfZ58mtLQhNBe1O7~ljvmGeKT9qObu~pg0y85EhQ0Hqv3Ed6SnhsupC02qxqVF9X6WOgqPZJIFF~LaiFSGB15SrMzHtoZsr5OvM3pq7UWt7hFIci8PzDD~fBwVgS9v0KYkO20o1fpv~cC1Gt7wXkdZT7VFnZgB0dpAOOi0Vodo2evQaylHGk-E03A3VC4YW2KMVdHNrf5uUJl1C6w__");
   background-repeat:no-repeat;
   background-size:cover;
-  margin:12px;
+}
+
+.hero-web4{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  max-width:100%;
+  padding:80px;
+  background-image:url("../images/bg.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin:0 auto;
+  border-radius:24px;
+}
+
+.unisec-padding{
+  padding:48px 0;
 }
 
 /* @media screen and (max-width: 767.999px) {
@@ -497,17 +542,17 @@ html {
 @media screen and (max-width: 576px) {
   .header__toggle .nav-close {
     display:none;
-    position:absolute;
+    /* position:absolute;
     left:342px;
-    top:16px;
+    top:16px; */
   }
 
-  .header__toggle .nav-open {
+  /* .header__toggle .nav-open {
     display:block;
     position:absolute;
     left:342px;
     top:16px;
-  }
+  } */
 
   .hero-web3 > h2 {
     line-height:56px;
@@ -574,20 +619,20 @@ html {
     font-weight:500;
     line-height:56px;
     white-space:nowrap;
-    margin-left:-155px;
+    margin-left:-170px;
   }
 
   .wallet-tracking-title > p{
     font-family:"Inter Tight", sans-serif;
     font-size: 16px;
     font-weight:400;
-    margin-left:-150px;
+    margin-left:-166px;
+    margin-top:-44px;
   }
 
   .btn-get-extension{
-    margin-top:12px;
     white-space:nowrap;
-    width:100%;
+    width:100% !important;
   }
 
   .btn-view-api-document {
@@ -632,13 +677,15 @@ html {
 
    .header__menu > ul{
      flex-direction:column;
-     margin-top:-48px;
-     margin-left:-52px;
+
    }
 
    .hero-multiLayer-title{
      font-size:32px;
-     padding:20px;
+     line-height:38px;
+     padding:18px;
+     position:absolute;
+     top:-94px;
    }
 
    .image-detection-1 > .left{
@@ -647,26 +694,18 @@ html {
      background-position:center;
    }
 
-   .hero{
-     margin-top:-190px;
-   }
-
    .wallet-tracking-title{
       margin-left:100px;
       margin-top:0;
    }
 
    .wallet-title{
-     margin-left:-147px;
+     margin-left:-165px;
    }
 
    .btn-wallet-tracking{
      margin-left:-167px;
      min-width:89vw;
-   }
-
-   .hero__content{
-     margin-top:180px;
    }
 
    #guardian__item__partner {
@@ -680,7 +719,7 @@ html {
   }
 
   .item{
-    width:70%;
+    width:75%;
   }
 
   .guardian__item {
@@ -689,7 +728,7 @@ html {
   }
 
   .wrapper-tracking{
-    margin-left:30px;
+    margin-left:5px;
   }
 
   .order-section-1{
@@ -714,4 +753,31 @@ html {
   .image-detection-1 > .left > img {
     margin-left:25px;
   }
+
+  .guardian__item > .item:nth-of-type(1) {
+    border-top-right-radius:16px;
+    border-top-left-radius:16px;
+  }
+
+  .guardian__item > .item:nth-of-type(2) {
+    border-top-right-radius:0;
+  }
+
+  #ethereum{
+    border-bottom-left-radius:0;
+    border-top-right-radius:0;
+  }
+
+  #solana{
+    border-bottom-left-radius:16px;
+  }
+
+  .hero__content{
+    padding:24px 16px 24px 16px;
+    margin-left:-11px;
+  }
+
+  /* .hero__content > span{
+    margin-left:-12px;
+  } */
 }
