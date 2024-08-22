@@ -245,6 +245,7 @@ body{
   right:0;
   bottom:0;
   border-radius:24px; /* Same radius as the wrapper */
+  margin:16px;
   padding:3px; /* Thickness of the border */
   background:linear-gradient(45deg, #08D080, #3B65D1, #F8BF96); /* Gradient border */
   -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -551,12 +552,12 @@ body{
   }
 
   .img-icon-1 {
-    margin-left: 35px;
+    margin:0 auto;
   }
 
   .icon-group > p {
     white-space:nowrap;
-    font-size:27px;
+    font-size:24px;
   }
 
   .guardian__item {
@@ -779,5 +780,23 @@ body{
 
   .hero__content-heading{
     padding:12px 0;
+  }
+
+  .hero-web4 > h2{
+    text-align:center;
+    font-size:32px;
+    line-height:40px;
+  }
+
+  .hero-web4 > p{
+    text-align:center;
+    font-size:14px;
+    line-height:20px;
+  }
+
+  .footer__menu-container {
+    display:flex;
+    justify-content:flex-start;
+    margin:10px;
   }
 }
