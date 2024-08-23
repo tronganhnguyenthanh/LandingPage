@@ -548,10 +548,6 @@ body{
   left:23px !important
 }
 
-/* @media screen and (max-width: 767.999px) {
-
-} */
-
 @media screen and (max-width: 576px){
   .header__toggle .nav-close {
     display:none;
@@ -861,5 +857,17 @@ body{
 
   .hero-web4 .icon-group-inline .icon-group img {
     margin:0 auto !important;
+  }
+
+  .hero__image .hero__image-card-1{
+    bottom:70px;
+  }
+
+  .hero__image .hero__image-card-2 {
+    max-width:120px;
+    border-radius:5px;
+    padding:8px;
+    right:0;
+    top:55px;
   }
 }
