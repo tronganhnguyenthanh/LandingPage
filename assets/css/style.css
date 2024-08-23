@@ -860,14 +860,6 @@ body{
   }
 
   .hero__image .hero__image-card-1{
-    bottom:70px;
-  }
-
-  .hero__image .hero__image-card-2 {
-    max-width:120px;
-    border-radius:5px;
-    padding:8px;
-    right:0;
-    top:55px;
+    bottom:70px !important;
   }
 }

@@ -867,7 +867,8 @@ h5 {
     }
 
     .hero__image-card-2 {
-        top: 110px;
+        right:0;
+        top:110px;
     }
 
     .private-img {
