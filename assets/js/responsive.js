@@ -130,20 +130,17 @@ $(document).ready(function () {
     // Function to check and display the screen width
     function checkScreenWidth() {
         var screenWidth = $(window).width();
-
         // Check if the screen width is less than 768px
         if (screenWidth < 768) {
-            
-            console.log("Screen width is less than 768px (mobile view).");
+          //console.log("Screen width is less than 768px (mobile view).");
         } else {
             if ($('header').hasClass('open-menu')) {
                 // If it does, remove the class 'active'
                 $('header').removeClass('open-menu');
-                console.log("Class 'active' removed from header.");
             } else {
-                console.log("Header does not have the class 'active'.");
+               //console.log("Header does not have the class 'active'.");
             }
-            console.log("Screen width is 768px or more (desktop/tablet view).");
+            //console.log("Screen width is 768px or more (desktop/tablet view).");
         }
     }
 
@@ -152,6 +149,6 @@ $(document).ready(function () {
 
     // Attach the resize event handler to check width on resize
     $(window).resize(function () {
-        checkScreenWidth();
+       checkScreenWidth();
     });
 });

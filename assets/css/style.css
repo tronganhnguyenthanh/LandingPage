@@ -611,6 +611,7 @@ body{
     background-size:cover;
     height:auto;
     width:337px;
+    border-radius:16px;
   }
 
   .wallet-tracking {
@@ -624,18 +625,18 @@ body{
 
   .wallet-tracking-title > h2 {
     font-family:"Inter Tight", sans-serif;
-    font-size:23px;
+    font-size:21px;
     font-weight:500;
     line-height:56px;
     white-space:nowrap;
-    margin-left:-170px;
+    margin-left:-10rem;
   }
 
   .wallet-tracking-title > p{
     font-family:"Inter Tight", sans-serif;
     font-size:14px;
     font-weight:400;
-    margin-left:-166px;
+    margin-left:-10rem;
     margin-top:-30px;
   }
 
@@ -647,7 +648,7 @@ body{
   .btn-view-api-document {
     white-space:nowrap;
     margin-left:-152px;
-    min-width:89vw;
+    min-width:85vw;
   }
    
    .unisec{
@@ -662,10 +663,6 @@ body{
 
    .footer__heading-text{
      padding:16px;
-   }
-
-   .footer__heading{
-     padding:56px;
    }
 
    .footer{
@@ -704,12 +701,12 @@ body{
    }
 
    .wallet-title{
-     margin-left:-165px;
+     margin-left:-9rem;
    }
 
    .btn-wallet-tracking{
      margin-left:-167px;
-     min-width:89vw;
+     min-width:85vw;
    }
 
    #guardian__item__partner {
@@ -861,5 +858,9 @@ body{
 
   .hero__image .hero__image-card-1{
     bottom:70px !important;
+  }
+
+  .unisec-padding{
+    padding:0;
   }
 }
