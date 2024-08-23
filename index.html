@@ -8,6 +8,7 @@
   <link rel="stylesheet" id="wp-block-library-css" href="https://u2sec.biexce.com/wp-includes/css/dist/block-library/style.min.css?ver=6.5.4" media="all" />
   <link rel="stylesheet" id="cyberg-main-style-css" href="./assets/css/main.css" media="all" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/scss/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 </head>
 <body>
@@ -60,19 +61,20 @@
       </div>
     </header>
     <section id="hero-section" class="hero">
-      <div class="container hero__container">
+      <div class="hero__container">
         <div class="hero__content">
-          <span class="wallet-title">Browser Extension</span>
-          <h1 class="hero__content-heading">
-            <span>Proactive Web3</span>
-            <span>Security Solution</span>
-          </h1>
-          <p class="hero__content-desc">
-            On-chain protection against crypto threats, exploits, hacks, scams
-            and financials risks.
-          </p>
-          <div class="hero__content-btns">
-            <a href="https://u2sec.biexce.com" class="btn-get-extension w-50 m-sm-3">Get extension</a>
+          <div class="hero__content-box">
+            <p class="wallet-title">Browser Extension</p>
+            <h1 class="hero__content-heading">
+              <span class="highlight">Proactive</span> Web3 Security Solution
+            </h1>
+            <p class="hero__content-desc">
+              On-chain protection against crypto threats, exploits, hacks,
+              scams and financials risks.
+            </p>
+          </div>
+          <div class="hero__content-btns" style="padding:16px">
+            <a href="https://u2sec.biexce.com" class="btn-get-extension">Get extension</a>
           </div>
         </div>
         <div class="hero__image">
@@ -107,76 +109,68 @@
           <img srcset="
                 https://u2sec.biexce.com/wp-content/themes/cyberg/assets/imgs/private.png 2x
               " alt="hacker" class="private-img" />
-          <div class="circle-1"></div>
-          <div class="circle-2"></div>
-          <div class="circle-3"></div>
-          <div class="triangle"></div>
+          <!-- <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div> -->
+          <!-- <div class="triangle"></div> -->
         </div>
       </div>
     </section>
     <section class="hero-web4">
-      <h2>Web3 Security Layer</h2>
-      <p>
-        On-chain protection against crypto threats, exploits, hacks, scams and
-        financials risks.
-      </p>
-      <div class="icon-group-inline">
-        <div class="icon-group">
-          <img src="./assets/images/icon1.png" alt="" class="img-icon-1 p-2" />
-          <p class="text-center">Security Extension</p>
-        </div>
-        <div class="icon-group">
-          <img src="./assets/images/icon2.png" alt="" class="p-2 m-auto" />
-          <p class="text-center">Monitoring</p>
-        </div>
-        <div class="icon-group">
-          <img src="./assets/images/icon3.png" alt="" class="p-2 m-auto" />
-          <p class="text-center">Security API</p>
+      <div class="content-wrapper">
+        <div class="hero-web4-wrapper">
+          <div class="hero-web4-box">
+            <h2>Web3 Security Layer</h2>
+            <p>
+              On-chain protection against crypto threats, exploits, hacks,
+              scams and financials risks.
+            </p>
+          </div>
+          <div class="icon-group-inline">
+            <div class="icon-group">
+              <img src="./assets/images/icon1.png" alt="" class="img-icon-1 p-2" />
+              <p class="text-center">Security Extension</p>
+            </div>
+            <div class="icon-group">
+              <img src="./assets/images/icon2.png" alt="" class="p-2 m-auto" />
+              <p class="text-center">Monitoring</p>
+            </div>
+            <div class="icon-group">
+              <img src="./assets/images/icon3.png" alt="" class="p-2 m-auto" />
+              <p class="text-center">Security API</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section id="feature-section" class="feature">
-      <div class="container feature__container">
-        <div class="plus-1"></div>
-        <div class="square-1"></div>
-        <div class="square-2"></div>
-        <div class="square-3"></div>
-        <div class="square-4"></div>
-        <div class="circle-4"></div>
-        <div class="circle-5"></div>
+      <div class="content-wrapper">
+        <div class="plus-1 sicker"></div>
+        <div class="square-1 sicker"></div>
+        <div class="square-2 sicker"></div>
+        <div class="square-3 sicker"></div>
+        <div class="square-4 sicker"></div>
+        <!-- <div class="circle-4"></div> -->
+        <div class="circle-5 sicker">
+          <img src="assets/images/icon4.png" alt="" />
+        </div>
+
         <div class="feature__row">
-          <div class="feature__column">
+          <div class="feature__column first">
             <div class="feature__item">
-              <div class="feature__info">
-                <h3 class="feature__info-heading">Threat Monitoring</h3>
-                <p class="feature__info-desc"></p>
-                <p>
-                  Secure your on-chain portfolio and transaction activity from
-                  financial losses through threat monitoring.
-                </p>
-                <p></p>
-                <a href="https://u2sec.biexce.com/?project=project-1" class="feature__info-btn">CHECK NOW !</a>
-              </div>
-              <div class="feature__image">
-                <img src="./assets/images/chart1.png" alt="feature thumbnail" />
-              </div>
-            </div>
-          </div>
-          <div class="feature__column">
-            <div class="feature__item">
-              <div class="feature__image">
-                <img src="./assets/images/chart.png" alt="" />
-              </div>
-              <div class="feature__info">
-                <h3 class="feature__info-heading">Security Firewall</h3>
-                <p class="feature__info-desc">
-                  Protect your assets in real-time and get peace of mind while
-                  interacting with on-chain protocols.
-                </p>
-                <p></p>
-                <a href="https://u2sec.biexce.com/?project=prevention-of-cyber-fraud" class="feature__info-btn">
-                  CHECK NOW!
-                </a>
+              <div class="feature__item-box">
+                <div class="feature__image">
+                  <img src="./assets/images/chart.png" alt="" />
+                </div>
+                <div class="feature__info">
+                  <h3 class="feature__info-heading">Security Firewall</h3>
+                  <p class="feature__info-desc">
+                    Protect your assets in real-time and get peace of mind
+                    while interacting with on-chain protocols.
+                  </p>
+                  <p></p>
+
+                </div>
               </div>
               <div class="hero-title">
                 <h2 class="hero-multiLayer-title">
@@ -185,11 +179,29 @@
               </div>
             </div>
           </div>
+          <div class="feature__column two">
+            <div class="feature__item">
+              <div class="feature__item-box">
+                <div class="feature__info">
+                  <h3 class="feature__info-heading">Threat Monitoring</h3>
+                  <p class="feature__info-desc"></p>
+                  <p>
+                    Secure your on-chain portfolio and transaction activity
+                    from financial losses through threat monitoring.
+                  </p>
+                  <p></p>
+                </div>
+                <div class="feature__image">
+                  <img src="./assets/images/chart1.png" alt="feature thumbnail" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section id="guardian-section-1" class="hero">
-      <div class="guardian__container container">
+    <section id="guardian-section-1">
+      <div class="guardian__container">
         <div class="guardian__header">
           <h2 class="guardian__header-title title">
             Early Detection and Precise Protection
@@ -199,33 +211,37 @@
             and financials risks.
           </p>
         </div>
-      </div>
-      <div class="unisec-diagram">
-        <div class="container">
-          <div class="image-detection-1">
-            <div class="image-detection-1-left">
-              <div class="text-dectection-1">
-                <p>ASSET MANANGERS</p>
-              </div>
-              <div class="text-dectection-2">
-                <p>HEDGE FUNDS</p>
-              </div>
-              <div class="text-dectection-3">
-                <p>DAO's</p>
+        <div class="image-detection-1">
+          <div class="row">
+            <div class="col-4">
+              <div class="image-detection-1-left">
+                <div class="text-dectection-1 txt-mobile">
+                  <p>ASSET MANANGERS</p>
+                </div>
+                <div class="text-dectection-2 txt-mobile">
+                  <p>HEDGE FUNDS</p>
+                </div>
+                <div class="text-dectection-3 txt-mobile">
+                  <p>DAO's</p>
+                </div>
               </div>
             </div>
-            <div class="left">
-              <img src="./assets/images/Logo-Unisec.png" alt="" />
+            <div class="col-4">
+              <div class="left">
+                <img src="./assets/images/Logo-Unisec.png" alt="" />
+              </div>
             </div>
-            <div class="image-detection-1-right">
-              <div class="text-dectection-4">
-                <p>LIQUID VCs</p>
-              </div>
-              <div class="text-dectection-5">
-                <p>PROTOCOLS</p>
-              </div>
-              <div class="text-dectection-6">
-                <p>WEB3 PRODUCTS</p>
+            <div class="col-4">
+              <div class="image-detection-1-right">
+                <div class="text-dectection-4 txt-mobile">
+                  <p>LIQUID VCs</p>
+                </div>
+                <div class="text-dectection-5 txt-mobile">
+                  <p>PROTOCOLS</p>
+                </div>
+                <div class="text-dectection-6 txt-mobile">
+                  <p>WEB3 PRODUCTS</p>
+                </div>
               </div>
             </div>
           </div>
@@ -244,7 +260,7 @@
             organization and users from any phishing attempts, hacks and
             scams.
           </p>
-          <div class="hero__content-btns">
+          <div class="hero__content-btns" id="get-monitoring-get-extension">
             <a href="https://u2sec.biexce.com" class="btn-get-extension w-25 m-auto">Get extension</a>
           </div>
         </div>
@@ -337,7 +353,7 @@
       </div>
     </section>
     <div class="unisec-padding">
-      <div class="row">
+      <div class="row mw-100">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
           <div class="wrapper-tracking">
             <img src="./assets/images/1.png" alt="" />
@@ -358,7 +374,7 @@
           </div>
         </div>
       </div>
-      <div class="row flex-column-reverse flex-lg-row">
+      <div class="row flex-column-reverse flex-lg-row mw-100">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
           <div class="wallet-tracking-title">
             <span class="wallet-title">API Document</span>
