@@ -1091,10 +1091,10 @@ h5 {
 }
 
 .feature__item .feature__info-heading {
-    font-weight: 500;
-    font-size: 33px;
-    line-height: 44px;
-    margin-bottom: 8px;
+    font-weight:500;
+    font-size:32px;
+    line-height:44px;
+    margin-bottom:8px;
 }
 
 .feature__item .feature__info-btn {
@@ -1131,9 +1131,9 @@ h5 {
 }
 
 .feature__column:last-child .feature__item .feature__info-heading {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 36px;
+    font-weight:700;
+    font-size:32px;
+    line-height:36px;
 }
 
 .feature__column:last-child .feature__item .feature__info-btn {
