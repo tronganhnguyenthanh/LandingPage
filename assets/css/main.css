@@ -145,7 +145,7 @@ body {
 }
 
 .container {
-   max-width:1050px;
+   max-width:960px;
    padding:0 20px;
    margin-left:auto;
    margin-right:auto;
@@ -1919,9 +1919,8 @@ h5 {
 }
 
 .guardian__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+  display:flex;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 #guardian-section .guardian__list,
@@ -3567,10 +3566,10 @@ cursor: pointer
     }
 }
 .footer {
-    padding-top: 40px;
-    padding-bottom: 48px;
-    background-image: url("../images/bg_footer.png");
-    background-repeat: no-repeat;
+  background-image:url("../images/bg_footer.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding:120px 0 80px;
 }
 
 .footer__heading {
